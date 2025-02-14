@@ -10,7 +10,9 @@
     <ItemGroup>
       <PackageReference Include="OpenCvSharp4" Version="4.10.0.20241108" />
       <PackageReference Include="OpenCvSharp4.Extensions" Version="4.10.0.20241108" />
+      <PackageReference Include="OpenCvSharp4.runtime.osx_arm64" Version="4.8.1-rc" />
       <PackageReference Include="OpenCvSharp4Extern" Version="1.0.0" />
+      <PackageReference Include="OpenCvSharp4_.runtime.ubuntu.20.04-x64" Version="4.10.0.20240616" />
     </ItemGroup>
 
 </Project>

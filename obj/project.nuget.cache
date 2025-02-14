@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "CgZrTJ2SAQY=",
+  "dgSpecHash": "AQbs1LsP9d4=",
   "success": true,
   "projectFilePath": "/Users/adil/Developer/C#/BadAppleToConsole/BadAppleToConsole/BadAppleToConsole.csproj",
   "expectedPackageFiles": [
     "/Users/adil/.nuget/packages/microsoft.win32.systemevents/8.0.0/microsoft.win32.systemevents.8.0.0.nupkg.sha512",
     "/Users/adil/.nuget/packages/opencvsharp4/4.10.0.20241108/opencvsharp4.4.10.0.20241108.nupkg.sha512",
     "/Users/adil/.nuget/packages/opencvsharp4.extensions/4.10.0.20241108/opencvsharp4.extensions.4.10.0.20241108.nupkg.sha512",
+    "/Users/adil/.nuget/packages/opencvsharp4.runtime.osx_arm64/4.8.1-rc/opencvsharp4.runtime.osx_arm64.4.8.1-rc.nupkg.sha512",
     "/Users/adil/.nuget/packages/opencvsharp4extern/1.0.0/opencvsharp4extern.1.0.0.nupkg.sha512",
+    "/Users/adil/.nuget/packages/opencvsharp4_.runtime.ubuntu.20.04-x64/4.10.0.20240616/opencvsharp4_.runtime.ubuntu.20.04-x64.4.10.0.20240616.nupkg.sha512",
     "/Users/adil/.nuget/packages/system.drawing.common/8.0.0/system.drawing.common.8.0.0.nupkg.sha512",
     "/Users/adil/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512",
     "/Users/adil/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
