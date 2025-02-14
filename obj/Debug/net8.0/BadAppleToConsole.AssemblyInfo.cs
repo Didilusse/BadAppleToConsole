@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BadAppleToConsole")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ec422300cf4dbbd3d08c138e98061890fbb495f5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f3663158c57d48f00081002fbc4d4e9f47e8a9f")]
 [assembly: System.Reflection.AssemblyProductAttribute("BadAppleToConsole")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BadAppleToConsole")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

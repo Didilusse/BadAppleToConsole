@@ -1,29 +1,33 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 using System;
+using System.Text;
 using OpenCvSharp;
 
 class Program
 {
     static void Main()
     {
-        string videoFile = "/Users/adil/Developer/C#/BadAppleToConsole/BadAppleToConsole/video.mp4";
-        System.IO.Directory.CreateDirectory("frames");
+
+        string videoFile = "/Users/adil/Developer/C#/BadAppleToConsole/BadAppleToConsole/video_smaller.mp4";
+        
 
         using var capture = new VideoCapture(videoFile);
-        using var window = new Window("Frame Preview");
         Mat frame = new Mat();
-
         int frameNumber = 0;
-
+        
         while (capture.IsOpened())
         {
             capture.Read(frame);
             if (frame.Empty())
                 break;
-
+            
+            
+            
+            StringBuilder frameOutput = new StringBuilder();
             frameNumber++;
-            Console.WriteLine($"Processing Frame {frameNumber}: {frame.Width}x{frame.Height}");
+            
+            
 
             // Loop through each pixel
             for (int y = 0; y < frame.Height; y++)
@@ -34,14 +38,22 @@ class Program
                     byte blue = pixel.Item0;
                     byte green = pixel.Item1;
                     byte red = pixel.Item2;
-
-                    Console.WriteLine($"Frame {frameNumber} - Pixel[{x},{y}]: R={red}, G={green}, B={blue}");
+                    if (red == 255 || green == 255 || blue == 255)
+                    {
+                        frameOutput.Append(" ");
+                    }
+                    else if (red == 0 && green == 0 && blue == 0)
+                    {
+                        frameOutput.Append("@");
+                    }
                 }
+                frameOutput.Append('\n');
             }
-            // Show the frame
-            window.ShowImage(frame);
-            if (Cv2.WaitKey(1) == 113) // Press 'Q' to quit
-                break;
+            Console.Write(frameOutput.ToString());
+            
+            // Frame rate control
+            int delay = (int)(1000 / (capture.Fps > 0 ? capture.Fps : 30));
+            Cv2.WaitKey(delay);
         }
 
         Console.WriteLine("Processing Complete!");
